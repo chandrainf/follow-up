@@ -15,3 +15,12 @@ app.listen(config.port, (err) => {
   }
   console.info('Server started on port %s.', config.port)
 })
+
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build/'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(_dirname, 'client', 'build', 'index.html'));
+  });
+}
