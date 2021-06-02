@@ -1,7 +1,7 @@
 const config = {
   env: process.env.NODE_ENV || 'development',
   port: process.env.PORT || 3000,
-  jwtSecret: process.env.JWT_SECRET || "YOUR_sSDJF0W850FJ5LDFJ4095809DFJG045FGecret_key",
+  jwtSecret: process.env.JWT_SECRET || "SDJF0W850FJ5LDFJ4095809DFJG045F",
   mongoUri: process.env.MONGODB_URI || "mongodb+srv://sysadmin:YBc6bStzgNYMRgss@cluster0.sgrvx.gcp.mongodb.net/miniERP?retryWrites=true&w=majority"
     //process.env.MONGO_HOST ||
     //'mongodb://' + (process.env.IP || 'localhost') + ':' +
