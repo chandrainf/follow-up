@@ -1,6 +1,12 @@
-import config from './../config/config'
+import config from './config'
 import app from './express'
 import mongoose from 'mongoose'
+
+
+//var config = require ("express");
+//var app = require("express");
+//var mongoose = require("mongoose");
+
 
 // Connection URL
 mongoose.Promise = global.Promise
